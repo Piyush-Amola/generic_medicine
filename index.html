@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generic Medicine Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home" id="homeLink">Home</a></li>
+            <li><a href="/components/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <label for="medicinesearch">Medicine Name</label>
+          <input
+            type="text"
+            name="search"
+            id="medicinesearch"
+            placeholder="Enter medicine name"
+            onclick="search()"
+          />
+          <div id="button">
+            <button onclick="alternativesSearch()" type="submit">
+              Find ALternatives
+            </button>
+          </div>
+        </section>
+        <section class="detial">
+          <h1>Good Morning, Ritesh</h1>
+          <div class="contain">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <img
+              src="https://content.jdmagicbox.com/comp/lucknow/l9/0522px522.x522.220327203038.d6l9/catalogue/prdhan-mantri-jan-aushadhi-kendra-lucknow-chemists-0fkvatjnq1.jpg"
+              alt="Pradhan Mantri Jan Aushadhi Kendra"
+            />
+          </div>
+        </section>
+
+        <section id="result" style="display: none"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
